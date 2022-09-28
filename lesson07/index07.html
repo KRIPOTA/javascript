@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lesson07.js" defer></script>
+    <title>Document</title>
+    <style>
+        .good {
+            border: 1px solid #000;
+            margin-bottom: 5px;
+            background: #ccc;
+        }
+
+        .container {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cat {
+            border: 1px solid rgb(0, 0, 0);
+            margin-bottom: 5px;
+            background: rgb(243, 244, 187);
+            width: 200px;
+            height: 200px;
+        }
+
+        .catalog-list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-catalog {
+            background: rgba(255, 0, 0, 0.271);
+        }
+
+        .form_total {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form_name {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .state {
+            margin-bottom: 15px;
+            width: 250px;
+            height: 20px;
+        }
+
+        .btn-confirm {
+            width: 250px;
+            height: 40px;
+        }
+
+        .btn-name {
+            width: 250px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont">
+        <H2>КОРЗИНА</H2>
+        <div class="cart-list"></div>
+        <button class="cart-btn">Очистить корзину</button>
+        <button class="cart-buy">Купить</button>
+        <H2>КАТАЛОГ</H2>
+        <div class="catalog-list">
+        </div>
+    </div>
+
+</body>
+
+</html>
