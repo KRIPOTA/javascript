@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.header {
+    margin-top: 15px;
+}
+
+.goods-list {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.goods-item {
+    border: 1px solid;
+    height: 110px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.goods-search {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.text-button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.validation {
+    width: 200px;
+    height: 100px;
+}
