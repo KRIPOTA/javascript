@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homework06.css">
+    <title>Homework05</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <header>
+                <search v-model="searchLine"></search>
+                <button class="search-button" type="button" @click='filterGoods()'>Искать</button>
+                <button class="cart-button" type="button" @click='isVisibleCart = !isVisibleCart'>Показать/убрать
+                    корзину</button>
+            </header>
+            <main>
+                <goods-list :goods="filteredGoods">
+                </goods-list>
+                <basket v-if="isVisibleCart">
+                </basket>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="homework06.js"></script>
+</body>
+
+</html>
