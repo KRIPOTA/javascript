@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homework08.css">
+    <title>Интернет-магазин</title>
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="search">
+                <input class="goods-search" v-model="searchLine" placeholder="Поиск товара" />
+                <button class="search-button" type="button" @click='filterGoods()'>Искать</button>
+            </div>
+            <button class="cart-button" type="button" @click='isVisibleCart = !isVisibleCart'>Корзина</button>
+        </header>
+        <div class="basketlist">
+            <div class="basket" v-if="isVisibleCart" :goods="basketGoods">
+                <h2 class="total">Общая стоимость: {{ totalPriceCoin }}</h2>
+                <div class="basket-item" v-for="basket in baskets" :good="basket">
+                    <h3 class="carttitle">{{ basket.product_name }}</h3>
+                    <h4 class="cartmintitle">Цена: {{ basket.price }}</h4>
+                    <div class="changecount">
+                        <button class="deletecount" :id="basket.id" v-on:click="deleteElCart()">-</button>
+                        <h4 class="cartcounttitle">{{ basket.count }}</h4>
+                        <button class="addcount" :id="basket.id" v-on:click="addElCart()">+</button>
+                    </div>
+                    <button class="delete" :id="basket.id" v-on:click="deleteItem()">Удалить</button>
+                </div>
+            </div>
+        </div>
+        <div class="catalog">
+            <div class="container">
+                <main>
+                    <div class="goods-list">
+                        <div class="goods-item" v-for="good in filteredGoods">
+                            <h2 class="catalogtitle">{{ good.product_name }}</h3>
+                                <h3 class="catalogmintitle">Цена: {{ good.price }}</h3>
+                                <button class="addcart" :id="good.id" v-on:click="addBasket()"
+                                    v-on:click="basketPrice()">Добавить в корзину</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="homework08.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+[
+    {
+        "id": "0",
+        "product_name": "Мышка",
+        "price": 100,
+        "count": 1
+    },
+    {
+        "id": "1",
+        "product_name": "Клавиатура",
+        "price": 200,
+        "count": 1
+    },
+    {
+        "id": "2",
+        "product_name": "Колонки",
+        "price": 130,
+        "count": 1
+    },
+    {
+        "id": "3",
+        "product_name": "Наушники",
+        "price": 150,
+        "count": 1
+    },
+    {
+        "id": "4",
+        "product_name": "Ноутбук",
+        "price": 400,
+        "count": 1
+    },
+    {
+        "id": "5",
+        "product_name": "Коврик",
+        "price": 150,
+        "count": 1
+    },
+    {
+        "id": "6",
+        "product_name": "Кресло",
+        "price": 160,
+        "count": 1
+    },
+    {
+        "id": "7",
+        "product_name": "Кабель",
+        "price": 150,
+        "count": 1
+    },
+    {
+        "id": "8",
+        "product_name": "Видеокарта",
+        "price": 150,
+        "count": 1
+    }
+]
