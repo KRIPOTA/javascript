@@ -1,0 +1,9 @@
+.header {
+  padding: 15px 0;
+}
+
+.header ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
